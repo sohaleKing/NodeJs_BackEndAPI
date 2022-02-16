@@ -4,12 +4,13 @@ const app = express();
 app.use(express.static("app"));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Hello HatchWays" });
+  res.json({ message: "Hello Walnut_HatchWays from Soheyl Rahgozar" });
 });
 
 require("./app/routes/hatchways.routes")(app);
 
-const server = app.listen(2022, () => {
-  console.log("listening to 2022 now!");
-});
+let port = process.env.PORT || 2022;
+if (process.env.NODE_ENV === "test") port = 4044;
+
+const server = app.listen(port, () => console.log(`Listening on port ${port}`));
 module.exports = server;
