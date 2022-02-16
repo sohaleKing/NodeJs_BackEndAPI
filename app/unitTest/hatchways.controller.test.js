@@ -94,27 +94,3 @@ describe("Route 2", () => {
     });
   });
 });
-
-// afterEach(async () => {
-//   await app.close();
-// });
-
-// //ping
-// describe("Route 1", () => {
-//   it("ping the api", async () => {
-//     const res = await request(app).get("/api/ping").send();
-//     expect(res.statusCode).toEqual(200);
-//   });
-// });
-
-// //post
-// describe("Route 2", () => {
-//   it("Query Parameters", async () => {
-//     const res = await request(app).get("/api/posts?tags=tech").send();
-//     expect(res.statusCode).toEqual(200);
-//   });
-// });
-
-// afterEach(async () => {
-//   await app.close();
-// });
