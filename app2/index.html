@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walnut HatchWays Assessment</title>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h2>select a subject to Retrieve the data</h2>
+    <form action="JavaScript:selectTag()">
+      <label for="tags">Choose a tag:</label>
+      <select name="tags" id="tags">
+        <option value=""></option>
+        <option value="tech">Tech</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
+        <option value="design">Design</option>
+        <option value="startups">Startups</option>
+        <option value="history">History</option>
+        <option value="culture">Culture</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Retrieve" />
+    </form>
+    <div id="data"></div>
+  </body>
+</html>
